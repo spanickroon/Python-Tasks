@@ -1,16 +1,15 @@
 """
 Task 2.3
-Implement a function which works the same as str.split method (without using str.split
-itself, ofcourse).
+Implement a function which works the same as str.split method
+(without using str.split itself, ofcourse).
 """
 
-def my_split(s: str) -> str:
 
+def my_split(s: str) -> str:
     res = []
     temp = []
 
     for i in list(s):
-
         if i != ' ':
             temp.append(i)
         else:
@@ -21,10 +20,10 @@ def my_split(s: str) -> str:
 
     return list(filter(None, res))
 
-def main():
 
+def main():
     print(my_split(input()))
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     main()
